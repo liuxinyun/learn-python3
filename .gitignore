@@ -44,6 +44,7 @@ ehthumbs.db
 Thumbs.db
 dist
 MANIFEST
+.idea
 
 # Translations
 *.mo
