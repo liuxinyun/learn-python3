@@ -19,7 +19,7 @@ def move(x, y, step, angle=0):
 n = my_abs(-20)
 print(n)
 
-x, y = move(100, 100, 60, math.pi / 6)
+x, y = move(100, 100, 60, int(math.pi / 6))
 print(x, y)
 
 # TypeError: bad operand type:

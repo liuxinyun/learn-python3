@@ -9,3 +9,9 @@ for name in names:
 # 打印数字 0 - 9
 for x in range(10):
     print(x)
+
+# 计算1+2+3...+100
+sum = 0
+for n in list(range(1,101,1)):
+    sum += n
+print(sum)
