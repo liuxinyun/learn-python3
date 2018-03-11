@@ -1,12 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-def main():
-    for n in primes():
-        if n < 1000:
-            print(n)
-        else:
-            break
 
 def _odd_iter():
     n = 1
@@ -19,11 +13,18 @@ def _not_divisible(n):
 
 def primes():
     yield 2
-    it = _odd_iter()
+    it = _odd_iter() # 初始化序列
     while True:
-        n = next(it)
+        n = next(it) # 返回序列的第一个数
         yield n
         it = filter(_not_divisible(n), it)
+
+def main():
+    for n in primes():
+        if n < 1000:
+            print(n)
+        else:
+            break
 
 if __name__ == '__main__':
     main()
