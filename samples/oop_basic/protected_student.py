@@ -32,4 +32,8 @@ print('bart.get_name() =', bart.get_name())
 bart.set_score(60)
 print('bart.get_score() =', bart.get_score())
 
+# 双下划线开头表示私有变量，但是Python并没有提供限制使用的方法，因此非要用也可以，全靠自觉。
+bart.__score = 70
+print(bart.__score)
+
 print('DO NOT use bart._Student__name:', bart._Student__name)

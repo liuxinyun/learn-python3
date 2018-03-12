@@ -27,3 +27,8 @@ bart.print_score()
 
 print('grade of Bart:', bart.get_grade())
 print('grade of Lisa:', lisa.get_grade())
+
+# Python可以直接为实例变量增加属性
+bart.age = 18
+print(bart.age)
+print(lisa.age)
