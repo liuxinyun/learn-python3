@@ -12,7 +12,7 @@ class Fib(object):
     def __next__(self):
         self.a, self.b = self.b, self.a + self.b # 计算下一个值
         if self.a > 100000: # 退出循环的条件
-            raise StopIteration();
+            raise StopIteration()
         return self.a # 返回下一个值
 
 for n in Fib():
